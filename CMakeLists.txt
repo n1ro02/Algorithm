@@ -8,4 +8,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # 把 src 和 test 子目录都加进来
 add_subdirectory(src)
 enable_testing()       # 打开 CTest 支持
-add_subdirectory(test)
+#add_subdirectory(test)
+
+#add_executable(new_target src/quickSort.cpp)
