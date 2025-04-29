@@ -1,39 +1,65 @@
-# ——— CLion & IDE ———
-.idea/                     # CLion 项目配置
-*.iml                      # IntelliJ/CLion module 文件
-.gitignore
+# --------------------
+# CLion / JetBrains IDE
+# --------------------
+.idea/
+*.iml
+*.iws
+out/
+cmake-build-*/
 
-# ——— CMake 构建目录 ———
-/cmake-build-debug/        # CLion 默认的 Debug 输出目录
-build/                     # 如果你有其他 build 目录
-out/                       # 有时习惯用 out/
-
-# ——— CMake 生成文件 ———
+# --------------------
+# CMake 构建缓存
+# --------------------
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
-compile_commands.json     # 如果开启了 CMAKE_EXPORT_COMPILE_COMMANDS
-Testing/
+compile_commands.json
+
+# --------------------
+# 构建产物
+# --------------------
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.lib
+*.exe
+*.out
+*.app
+
+# --------------------
+# 测试和安装文件
+# --------------------
 CTestTestfile.cmake
+Testing/
+install_manifest.txt
 
-# ——— 编译产物 ———
-*.o                        # 对象文件
-*.obj                      # Windows 下对象文件
-*.so                       # 共享库
-*.a                        # 静态库
-*.dll                      # Windows 动态库
-*.exe                      # Windows 可执行文件
-*.out                      # 通用可执行文件
-
-# ——— 编辑器 & 系统 临时/缓存 文件 ———
-*~                         # Emacs/Vim 备份
-*.swp                      # Vim swap 文件
-*.swo                      # Vim swap 文件
-*.bak                      # 备份文件
-.DS_Store                  # macOS
-Thumbs.db                  # Windows
-
-# ——— 日志 & 临时 ———
+# --------------------
+# 日志、数据库、调试临时文件
+# --------------------
 *.log
 *.tmp
+*.swp
+*~
+
+# --------------------
+# VSCode/CLion 或其他编辑器设置（可选）
+# --------------------
+.vscode/
+.clangd/
+.clang-format
+
+# --------------------
+# 系统文件（Windows/macOS）
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# 你手动添加的忽略目录/文件（按需）
+# --------------------
+# docs/generated/
+# build/
+# *.old
