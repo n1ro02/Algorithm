@@ -1,6 +1,7 @@
 # ——— CLion & IDE ———
 .idea/                     # CLion 项目配置
 *.iml                      # IntelliJ/CLion module 文件
+.gitignore
 
 # ——— CMake 构建目录 ———
 cmake-build-debug/         # CLion 默认的 Debug 输出目录
