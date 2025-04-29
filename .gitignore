@@ -4,7 +4,7 @@
 .gitignore
 
 # ——— CMake 构建目录 ———
-cmake-build-debug/         # CLion 默认的 Debug 输出目录
+/make-build-debug/         # CLion 默认的 Debug 输出目录
 build/                     # 如果你有其他 build 目录
 out/                       # 有时习惯用 out/
 
@@ -37,3 +37,4 @@ Thumbs.db                  # Windows
 # ——— 日志 & 临时 ———
 *.log
 *.tmp
+
